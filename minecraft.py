@@ -65,8 +65,8 @@ class game :
         
     def tools() :
         
-        swords = { "swords": { "vanillaSwords": { 1: { "name": "wood sword", "image": {  } }, 2: { "name": "cobble sword", "image": {  } }, 3: { "name": "iron sword", "image": {  } }, 4: { "name": "Gold sword", "image": {  } }, 5: { "name": "Diamond sword", "image": {  } } }, "moddedSwords": {  } } }
-        pickaxes = {  }
+        swords = { "vanillaSwords": { 1: { "name": "Wood sword", "images": {  }, "model": "" }, 2: { "name": "Cobble sword", "images": {  }, "model": "" }, 3: { "name": "Iron sword", "images": {  }, "model": "" }, 4: { "name": "Gold sword", "images": {  }, "model": "" }, 5: { "name": "Diamond sword", "images": {  }, "model": "" }, 6: { "name": "Emerald sword", "images": {  }, "model": "" }, 7: { "name": "Netherite sword", "images": {  }, "model": "" }, 8: { "name": "Obsidian sword", "images": {  }, "model": "" } }, "moddedSwords": {  } }
+        pickaxes = { "vanillaPickaxes": { 1: { "name": "Wood pickaxe", "images": "", "model": "" }, 2: { "name": "Cobble pickaxe", "images": "", "model": "" }, 3: { "name": "Iron pickaxe", "images": "", "model": "" }, 4: {  }, 5: {  }, 6: {  }, 7: {  }, 8: {  } } }
         axes = {  }
         shovels = {  }
         hoes = {  }
