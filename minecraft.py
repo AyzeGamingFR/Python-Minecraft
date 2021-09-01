@@ -63,6 +63,14 @@ class game :
         cobblestoneBlock = {"name": "cobble stone", "id": "", "images": {"topImage": {"img": "", "size": {"x": "64", "y": "64"}}, "bottomImage": {"img": "", "size": {"x": "64", "y": "64"}}, "forwardImage": {"img": "", "size": {"x": "64", "y": "64"}}, "backImage": {"img": "", "size": {"x": "64", "y": "64"}}, "leftImage": {"img": "", "size": {"x": "64", "y": "64"}}, "rightImage": {"img": "", "size": {"x": "64", "y": "64"}}}}
         lightBlock = {"name": "light", "id": "", "images": {"topImage": {"img": "", "size": {"x": "64", "y": "64"}}, "bottomImage": {"img": "", "size": {"x": "64", "y": "64"}}, "forwardImage": {"img": "", "size": {"x": "64", "y": "64"}}, "backImage": {"img": "", "size": {"x": "64", "y": "64"}}, "leftImage": {"img": "", "size": {"x": "64", "y": "64"}}, "rightImage": {"img": "", "size": {"x": "64", "y": "64"}}}}
         
+    def tools() :
+        
+        swords = {}
+        pickaxes = {}
+        axes = {}
+        shovels = {}
+        hoes = {}
+        
     def gui() :
         
         
