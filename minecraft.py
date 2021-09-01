@@ -87,7 +87,7 @@ class player :
         if key == playerDatas.playerSettings.playerShiftButton :
             
             game.animations.shift
-            playerCameraXCord = playerXCord -0.5
+            playerDatas.playerCameraXCord = playerXCord -0.5
             
 class internet :
     
