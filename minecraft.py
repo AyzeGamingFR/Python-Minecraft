@@ -38,11 +38,38 @@ class player :
             
         if key == playerDatas.playerSettings.playerShiftButton :
             
-            animations.shift
+            game.animations.shift
             playerCameraXCord = playerXCord -0.5
             
 class game :
     
+    def animations() :
+        
+        def forward() :
+            
+            
+            
+        def backward() :
+            
+            
+            
+        def left() :
+            
+            
+            
+        def right() :
+            
+            
+            
+        def shift() :
+            
+            
+            
+        def jump() :
+            
+            shift
+            
+            
     def blocks() :
         
         dirtBlock = {"name": "dirt", "id": 0, "images": {"topImage": {"img": "", "size": {"x": "64", "y": "64"}}, "bottomImage": {"img": "", "size": {"x": "64", "y": "64"}}, "forwardImage": {"img": "", "size": {"x": "64", "y": "64"}}, "backImage": {"img": "", "size": {"x": "64", "y": "64"}}, "leftImage": {"img": "", "size": {"x": "64", "y": "64"}}, "rightImage": {"img": "", "size": {"x": "64", "y": "64"}}}}
