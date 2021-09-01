@@ -67,7 +67,14 @@ class game :
             
         def jump() :
             
-            shift
+            
+            
+        def punch() :
+            
+            
+            
+        def useTool() :
+            
             
             
     def blocks() :
