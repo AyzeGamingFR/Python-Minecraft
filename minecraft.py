@@ -34,10 +34,28 @@ class game :
             
             
             
-        def useTool() :
+        def useTool(toolId) :
             
-            
-            
+            if toolId == 1 :
+                
+                
+                
+            if toolId == 2 :
+                
+                
+                
+            if toolId == 3 :
+                
+                
+                
+            if toolId == 4 :
+                
+                
+                
+            if toolId == 5 :
+                
+                
+                
     def blocks() :
         
         dirtBlock = {"name": "dirt", "id": 0, "images": {"topImage": {"img": "", "size": {"x": "64", "y": "64"}}, "bottomImage": {"img": "", "size": {"x": "64", "y": "64"}}, "forwardImage": {"img": "", "size": {"x": "64", "y": "64"}}, "backImage": {"img": "", "size": {"x": "64", "y": "64"}}, "leftImage": {"img": "", "size": {"x": "64", "y": "64"}}, "rightImage": {"img": "", "size": {"x": "64", "y": "64"}}}}
