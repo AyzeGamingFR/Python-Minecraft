@@ -42,11 +42,12 @@ class game :
                 """ if a sword is used, the sword anim is started """
                 if self.usedButton == 1 :
                     
-                    """ if the left button of a mouse is used, the attack anim is used """
+                    """ if the left button of a mouse is clicked, the attack anim is used """
                     
                 elif self.usedButton == 2 :
                     
-                    """ if the right button of a mouse is used, the defense anim is used """
+                    """ if the right button of a mouse is clicked, the defense anim is used """
+                    player.playerDatas.tool.XRotation = 45
                     
                 else :
                     
@@ -57,11 +58,12 @@ class game :
                 """ if a pickaxe is used, the pickaxe anim is started """
                 if self.usedButton == 1 :
                     
-                    
+                    """ if the left button of a mouse is clicked, the block destroying anim is used """
                     
                 elif self.usedButton == 2 :
                     
-                    
+                    """ if the right button of a mouse is clicked, the defense anim is used """
+                    player.playerDatas.tool.XRotation = 45
                     
                 else :
                     
@@ -70,15 +72,50 @@ class game :
             if toolId == 3 :
                 
                 """ if an axe is used, the axe anim is started """
-                
+                if self.usedButton == 1 :
+                    
+                    """ if the left button of a mouse is clicked, the destroying block anim is used """
+                    
+                elif self.usedButton == 2 :
+                    
+                    """ if the right button of a mouse is clicked, the defense anim is used """
+                    player.playerDatas.tool.XRotation = 45
+                    
+                else :
+                    
+                    print ("Error during the usage of the Axe !")
+                    
             if toolId == 4 :
                 
                 """ if a shovel is used, the shovel anim is started """
-                
+                if self.usedButton == 1 :
+                    
+                    """ if the left button of a mouse is clicked, the destroying block anim is used """
+                    
+                elif self.usedButton == 2 :
+                    
+                    """ if the right button of a mouse is clicked, the defense anim is used """
+                    player.playerDatas.tool.XRotation = 45
+                    
+                else :
+                    
+                    print ("Error during the usage of the shovel !")
+                    
             if toolId == 5 :
                 
-                
-                
+                if self.usedButton == 1 :
+                    
+                    """ if the left button of a mouse is clicked, the attack anim of the axe is used """
+                    
+                elif self.usedButton == 2 :
+                    
+                    """ if the right button of a mouse is clicked, the defense anim of the axe is used """
+                    player.playerDatas.tool.XRotation = 45
+                    
+                else :
+                    
+                    print ("Error during the usage of the hoe !")
+                    
     def blocks() :
         
         dirtBlock = {"name": "dirt", "id": 0, "images": {"topImage": {"img": "", "size": {"x": "64", "y": "64"}}, "bottomImage": {"img": "", "size": {"x": "64", "y": "64"}}, "forwardImage": {"img": "", "size": {"x": "64", "y": "64"}}, "backImage": {"img": "", "size": {"x": "64", "y": "64"}}, "leftImage": {"img": "", "size": {"x": "64", "y": "64"}}, "rightImage": {"img": "", "size": {"x": "64", "y": "64"}}}}
@@ -114,6 +151,16 @@ class player :
             playerRightButton = "d" AND "D"
             playerBackButton = "s" AND "S"
             playerShiftButton = ""
+            
+        def tool() :
+            
+            toolId = 0
+            XPos = 0
+            YPos = 0
+            ZPos = 0
+            XRotation = 0
+            YRotation = 0
+            ZRotation = 0
             
     def move(key) :
         
