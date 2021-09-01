@@ -1,7 +1,9 @@
 import keyboard
+import socket
 
 class game :
     
+    mainServers = []
     def animations() :
         
         def forward() :
@@ -91,4 +93,8 @@ class internet :
     
     def internetClient() :
         
-        
+        icsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        icsocket.connect(mainServers, 15000)
+        while True :
+            
+            icsocket.send()
