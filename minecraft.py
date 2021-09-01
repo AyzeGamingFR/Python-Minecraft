@@ -34,23 +34,46 @@ class game :
             
             
             
-        def useTool(toolId) :
+        def useTool(toolId, usedButton) :
             
+            self.usedButton = usedButton
             if toolId == 1 :
                 
-                
-                
+                """ if a sword is used, the sword anim is started """
+                if self.usedButton == 1 :
+                    
+                    """ if the left button of a mouse is used, the attack anim is used """
+                    
+                elif self.usedButton == 2 :
+                    
+                    """ if the right button of a mouse is used, the defense anim is used """
+                    
+                else :
+                    
+                    print ("Error during the usage of the sword !")
+                    
             if toolId == 2 :
                 
-                
-                
+                """ if a pickaxe is used, the pickaxe anim is started """
+                if self.usedButton == 1 :
+                    
+                    
+                    
+                elif self.usedButton == 2 :
+                    
+                    
+                    
+                else :
+                    
+                    print ("Error during the usage of the pickaxe !")
+                    
             if toolId == 3 :
                 
-                
+                """ if an axe is used, the axe anim is started """
                 
             if toolId == 4 :
                 
-                
+                """ if a shovel is used, the shovel anim is started """
                 
             if toolId == 5 :
                 
