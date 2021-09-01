@@ -65,11 +65,11 @@ class game :
         
     def tools() :
         
-        swords = {}
-        pickaxes = {}
-        axes = {}
-        shovels = {}
-        hoes = {}
+        swords = { "swords": { "vanillaSwords": { 1: { "name": "wood sword", "image": {  } }, 2: { "name": "cobble sword", "image": {  } }, 3: { "name": "iron sword", "image": {  } }, 4: { "name": "Gold sword", "image": {  } }, 5: { "name": "Diamond sword", "image": {  } } }, "moddedSwords": {  } } }
+        pickaxes = {  }
+        axes = {  }
+        shovels = {  }
+        hoes = {  }
         
     def gui() :
         
