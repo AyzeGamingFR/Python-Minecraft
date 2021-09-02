@@ -166,19 +166,19 @@ class player :
         
         if key == playerDatas.playerSettings.playerForwardButton :
             
-            
-            
-        if key == playerDatas.playerSettings.playerLeftButton :
-            
-            
-            
-        if key == playerDatas.playerSettings.playerRightButton :
-            
-            
+            playerDatas.ZPos += 0.5
             
         if key == playerDatas.playerSettings.playerBackButton :
             
+            playerDatas.ZPos -= 0.5
             
+        if key == playerDatas.playerSettings.playerLeftButton :
+            
+            playerDatas.XPos -= 0.5
+            
+        if key == playerDatas.playerSettings.playerRightButton :
+            
+            playerDatas.XPos += 0.5
             
         if key == playerDatas.playerSettings.playerShiftButton :
             
