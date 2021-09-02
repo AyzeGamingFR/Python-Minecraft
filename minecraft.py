@@ -133,6 +133,11 @@ class game :
         spongeWetBlock = { "name": "Wet sponge", "id": "", "images": {  } }
         waterBlock = { "name": "water", "id": "", "images": { "topImage": { "img": "", "size": { "x": 64, "y": 64 } }, "bottomImage": { "img": "", "size": { "x": 64, "y": 64 } }, "forwardImage": { "img": "", "size": { "x": 64, "y": 64 } }, "backImage": { "img": "", "size": { "x": 64, "y": 64 } }, "leftImage": { "img": "", "size": { "x": 64, "y": 64 } }, "rightImage": { "img": "", "size": { "x": 64, "y": 64 } } } }
         
+    def mobs() :
+        
+        creeper = { "name": "Creeper", "id": "", "explosion": { "radius": 3, "animation": "animations.explosions.creeper" }, "xp": 10 }
+        zombie = { "name": "Zombie", "id": "", "hurting": { "radius": 1, "animation": "animations.hurting.zombie" }, "xp": 10 }
+        
     def tools() :
         
         swords = { "vanillaSwords": { 1: { "name": "Wood sword", "images": {  }, "model": "" }, 2: { "name": "Cobble sword", "images": {  }, "model": "" }, 3: { "name": "Iron sword", "images": {  }, "model": "" }, 4: { "name": "Gold sword", "images": {  }, "model": "" }, 5: { "name": "Diamond sword", "images": {  }, "model": "" }, 6: { "name": "Emerald sword", "images": {  }, "model": "" }, 7: { "name": "Netherite sword", "images": {  }, "model": "" }, 8: { "name": "Obsidian sword", "images": {  }, "model": "" } }, "moddedSwords": {  } }
