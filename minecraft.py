@@ -7,7 +7,7 @@ class game :
     def animals() :
         
         cow = { "name": "", "sound": {  }, "animations": { "walking": "", "running": "" } }
-        mishroomcow = { "name": "", "sound": {  }, "animations": { "walking": "", "running": "" } }
+        mushroomcow = { "name": "", "sound": {  }, "animations": { "walking": "", "running": "" } }
         pig = { "name": "", "sound": {  }, "animations": { "walking": "", "running": "" } }
         
     def animations() :
