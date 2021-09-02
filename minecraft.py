@@ -43,6 +43,7 @@ class game :
                 if self.usedButton == 1 :
                     
                     """ if the left button of a mouse is clicked, the attack anim is used """
+                    player.playerDatas.tool.ZRotation = 45
                     
                 elif self.usedButton == 2 :
                     
@@ -59,6 +60,7 @@ class game :
                 if self.usedButton == 1 :
                     
                     """ if the left button of a mouse is clicked, the block destroying anim is used """
+                    player.playerDatas.tool.ZRotation = 45
                     
                 elif self.usedButton == 2 :
                     
@@ -75,6 +77,7 @@ class game :
                 if self.usedButton == 1 :
                     
                     """ if the left button of a mouse is clicked, the destroying block anim is used """
+                    player.playerDatas.tool.ZRotation = 45
                     
                 elif self.usedButton == 2 :
                     
@@ -91,6 +94,7 @@ class game :
                 if self.usedButton == 1 :
                     
                     """ if the left button of a mouse is clicked, the destroying block anim is used """
+                    player.playerDatas.tool.ZRotation = 45
                     
                 elif self.usedButton == 2 :
                     
@@ -106,6 +110,7 @@ class game :
                 if self.usedButton == 1 :
                     
                     """ if the left button of a mouse is clicked, the attack anim of the axe is used """
+                    player.playerDatas.tool.ZRotation = 45
                     
                 elif self.usedButton == 2 :
                     
