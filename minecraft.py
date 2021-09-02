@@ -4,6 +4,12 @@ import socket
 class game :
     
     mainServers = []
+    def animals() :
+        
+        cow = { "name": "", "sound": {  }, "animations": { "walking": "", "running": "" } }
+        mishroomcow = { "name": "", "sound": {  }, "animations": { "walking": "", "running": "" } }
+        pig = { "name": "", "sound": {  }, "animations": { "walking": "", "running": "" } }
+        
     def animations() :
         
         def forward() :
