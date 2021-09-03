@@ -1,5 +1,6 @@
 import keyboard
 import socket
+import threading
 
 class game :
     
@@ -139,6 +140,11 @@ class game :
         spongeWetBlock = { "name": "Wet sponge", "id": "", "images": {  } }
         waterBlock = { "name": "water", "id": "", "images": { "topImage": { "img": "", "size": { "x": 64, "y": 64 } }, "bottomImage": { "img": "", "size": { "x": 64, "y": 64 } }, "forwardImage": { "img": "", "size": { "x": 64, "y": 64 } }, "backImage": { "img": "", "size": { "x": 64, "y": 64 } }, "leftImage": { "img": "", "size": { "x": 64, "y": 64 } }, "rightImage": { "img": "", "size": { "x": 64, "y": 64 } } } }
         
+    def chat() :
+        
+        chatBackground = { "color": "", "size": { "x": "", "y": "" } }
+        chatText = { "color": "", "size": { "x": "", "y": "" } }
+        
     def mobs() :
         
         creeper = { "name": "Creeper", "id": "", "explosion": { "radius": 3, "animation": "animations.explosions.creeper" }, "xp": 10 }
@@ -208,10 +214,19 @@ class player :
             
 class internet :
     
+    def internetDatas() :
+        
+        internetClientReady = 0
+        
     def internetClient() :
         
         icsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         icsocket.connect(mainServers, 15000)
         while True :
             
-            icsocket.send()
+            internetDatas.internetClientReady = 1
+            
+    def internetServer() :
+        
+        issocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        issocket.listen(gethostbyname(gethost), 15001)
