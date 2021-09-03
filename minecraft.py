@@ -2,6 +2,25 @@ import keyboard
 import socket
 import threading
 
+class internet :
+    
+    def internetDatas() :
+        
+        internetClientReady = 0
+        
+    def internetClient() :
+        
+        icsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        icsocket.connect(mainServers, 15000)
+        while True :
+            
+            internetDatas.internetClientReady = 1
+            
+    def internetServer() :
+        
+        issocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        issocket.listen(gethostbyname(gethost), 15001)
+        
 class game :
     
     mainServers = []
@@ -193,40 +212,29 @@ class player :
         
         if key == playerDatas.playerSettings.playerForwardButton :
             
-            playerDatas.ZPos += 0.5
+            playerDatas.ZPos += 0.25
             
         if key == playerDatas.playerSettings.playerBackButton :
             
-            playerDatas.ZPos -= 0.5
+            playerDatas.ZPos -= 0.25
             
         if key == playerDatas.playerSettings.playerLeftButton :
             
-            playerDatas.XPos -= 0.5
+            playerDatas.XPos -= 0.25
             
         if key == playerDatas.playerSettings.playerRightButton :
             
-            playerDatas.XPos += 0.5
+            playerDatas.XPos += 0.25
             
         if key == playerDatas.playerSettings.playerShiftButton :
             
             game.animations.shift
             playerDatas.playerCameraXCord = playerXCord -0.5
             
-class internet :
+class threadingSystem() :
     
-    def internetDatas() :
+    def threadsDatas() :
         
-        internetClientReady = 0
         
-    def internetClient() :
         
-        icsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        icsocket.connect(mainServers, 15000)
-        while True :
-            
-            internetDatas.internetClientReady = 1
-            
-    def internetServer() :
-        
-        issocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        issocket.listen(gethostbyname(gethost), 15001)
+    threads = []
