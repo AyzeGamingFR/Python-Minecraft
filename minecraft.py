@@ -24,6 +24,8 @@ class internet :
 class game :
     
     mainServers = []
+    normalDayTime = 1440
+    doubledDayTime = 2880
     def animals() :
         
         cow = { "name": "", "sound": {  }, "animations": { "walking": "", "running": "" } }
