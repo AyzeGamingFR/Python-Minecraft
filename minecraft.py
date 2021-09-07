@@ -235,8 +235,7 @@ class player :
             
 class threadingSystem() :
     
-    def threadsDatas() :
-        
-        
-        
     threads = []
+    def thread() :
+        
+        
